@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="680.0" prefWidth="557.0" styleClass="pane01" stylesheets="@../assests/css/Login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Resourse.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="138.0" fitWidth="157.0" layoutX="201.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/chat1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="183.0" text="PTCD CHAT ROOM" textFill="#d32bd1">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserName" focusColor="#cc00ff" layoutX="145.0" layoutY="371.0" onKeyTyped="#txtUserNameKeyTypedOnAction" prefHeight="45.0" prefWidth="291.0" style="-fx-background-color: white;" unFocusColor="#e825ee" />
+      <JFXButton buttonType="RAISED" layoutX="205.0" layoutY="574.0" onAction="#btnStartedOnAction" prefHeight="45.0" prefWidth="157.0" styleClass="btn1" text="Get Started">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="133.0" layoutY="233.0" text="Welcome to Chat Room..." textFill="#dd08dd">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="59.0" layoutX="104.0" layoutY="372.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/img/user2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblError" layoutX="145.0" layoutY="434.0" prefHeight="35.0" prefWidth="291.0" />
+   </children>
+   <effect>
+      <Bloom threshold="1.0" />
+   </effect>
+</AnchorPane>
